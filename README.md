@@ -10,7 +10,7 @@ For our final project, we will have the opportunity to practice our web design s
 
 1. **Project Overview:**
 
-- Review the Figma design using the following link: (Click for link).
+- Review the Figma design using the following link: [Click for link](https://www.figma.com/file/eGZgj5EuT6Kv8MQWm8ANmg/Ecommerce-project?type=design&node-id=0-1&mode=design&t=2IGdXQOGbUFBSgVM-0).
 - Our task is to replicate the design as closely as possible using HTML and CSS.
 
 2. **Replication:**
