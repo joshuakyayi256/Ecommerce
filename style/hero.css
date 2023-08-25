@@ -1,0 +1,17 @@
+/*=== HERO SECTION START ===*/
+.hero-section {
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.header .site-logo img {
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*=== HERO SECTION END ===*/
