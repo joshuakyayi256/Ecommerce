@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TMART</title>
+  <title>TMART - Serves You Well</title>
   <script src="./logic/feather.js"></script>
   <!--CSS LINKS-->
   <link rel="stylesheet" href="./style/general.css">
   <link rel="stylesheet" href="./style/hero.css">
+  <link rel="icon" href="./images/logo.png">
 </head>
 <body>
 
@@ -15,9 +16,11 @@
   <main>
     <!--= HERO SECTION =-->
     <section class="hero-section">
-      <div class="header container">
+      <div class="header">
         <div class="site-logo">
-          <img src="./images/logo_white.png" alt="tmart logo">
+          <a href="#">
+            <img src="./images/logo_white.png" alt="tmart logo">
+          </a>
         </div>
     
         <!--=== NAV LINKS ===-->
@@ -32,20 +35,31 @@
     
         <!--=== GROUP NAV ICONS ===-->
         <div class="nav-icons">
-          <i data-feather="user"></i>
-          <i data-feather="shopping-cart"></i>
-          <i data-feather="menu"></i>
+          <a href="#">
+            <i data-feather="user"></i>
+          </a>
+          <a href="#">
+            <i data-feather="shopping-cart"></i>
+          </a>
+          <a href="#">
+            <i data-feather="menu"></i>
+          </a>
         </div>
         
       </div><!--== END OF HEADER SECTION ==-->
 
       <!--=== HEADLINE SECTION ===-->
       <div class="headline">
-        <h1>
-          New Product Collection 
-        </h1>
-        <a href="#">SHOP NOW</a>
+        <div>
+          <h1>
+            New Product Collection 
+          </h1>
+          <a href="#">SHOP NOW</a>
+        </div>
       </div>
+
+      <!--== OVERLAY ==-->
+      <div class="overlay"></div>
 
     </section><!--=== END OF HERO SECTION ===-->
 
