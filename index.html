@@ -16,7 +16,7 @@
   <main>
     <!--= HERO SECTION =-->
     <section class="hero-section">
-      <div class="header">
+      <div class="header"><!--== HEADER SECTION ==-->
         <div class="site-logo">
           <a href="#">
             <img src="./images/logo_white.png" alt="tmart logo">
@@ -24,7 +24,7 @@
         </div>
     
         <!--=== NAV LINKS ===-->
-        <nav>
+        <nav class="nav-menu">
           <ul>
             <li><a href="">Portfolio</a></li>
             <li><a href="">Blog</a></li>
@@ -42,11 +42,24 @@
             <i data-feather="shopping-cart"></i>
           </a>
           <a href="#">
-            <i data-feather="menu"></i>
+            <i data-feather="menu" onclick="showMenu()"></i>
           </a>
         </div>
-        
+
       </div><!--== END OF HEADER SECTION ==-->
+
+      <!--== HAMUGER MENU ==-->
+      <nav id="nav-hamb-menu">
+        <ul>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <div id="close-ham-menu">
+          <i data-feather="x" onclick="hideMenu()"></i>
+        </div>
+      </nav>
 
       <!--=== HEADLINE SECTION ===-->
       <div class="headline">
@@ -78,6 +91,17 @@
   <!--=== SCRIPT SECTION-->
   <script>
     feather.replace();
+
+    //SHOW HAMBURGER MENU
+    function showMenu() {
+      document.getElementById('nav-hamb-menu').style.display = 'flex';
+      document.getElementById('nav-hamb-menu').classList.add('slide-from-right')
+    }
+
+    //HIDE HAMBURGER MENU
+    function hideMenu() {
+      document.getElementById('nav-hamb-menu').style.display = 'none';
+    }
   </script>
 </body>
 </html>
