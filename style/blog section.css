@@ -1,0 +1,32 @@
+/*style sheet*/
+.blog-section {
+    display: block;
+    justify-content: center;
+    align-items: center; /* Corrected typo */
+}
+
+.image-container {
+    position: relative;
+    margin: auto;
+    width: auto;
+    height: fit-content;
+}
+
+.image-box {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}

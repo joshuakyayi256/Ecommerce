@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TMART</title>
-  <script src="./logic/feather.js"></script>
-  <!--CSS LINKS-->
-  <link rel="stylesheet" href="./style/general.css">
-  <link rel="stylesheet" href="./style/header.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="site-logo">
-        <img src="./images/site-logo.png" alt="tmart logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMART</title>
+    <script src="./logic/feather.js"></script>
+    <!--CSS LINKS-->
+    <link rel="stylesheet" href="./style/general.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="site-logo">
+          <img src="./images/site-logo.png" alt="tmart logo" />
+        </div>
+        <!--=== NAV LINKS ===-->
+        <nav>
+          <ul>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!--=== GROUP NAV ICONS ===-->
+        <div class="nav-icons">
+          <i data-feather="user"></i>
+          <i data-feather="shopping-cart"></i>
+          <i data-feather="menu"></i>
+        </div>
       </div>
-  
-      <!--=== NAV LINKS ===-->
-      <nav>
-        <ul>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-  
-      <!--=== GROUP NAV ICONS ===-->
-      <div class="nav-icons">
-        <i data-feather="user"></i>
-        <i data-feather="shopping-cart"></i>
-        <i data-feather="menu"></i>
-      </div>
-      
-    </div><!--== END OF CONTAINER ==-->
-  </header><!--=== END OF HEADER SECTION ===-->
+      <!--== END OF CONTAINER ==-->
+    </header>
+    <!--=== END OF HEADER SECTION ===-->
 
-  <!--=== MAIN SECTION START ===-->
-  <main>
-    <!--= HERO SECTION =-->
-    <section class="hero-section">
+    <!--=== MAIN SECTION START ===-->
+    <main>
+      <!--=== BLOG SECTION START===-->
+      <h1>Recent News</h1>
+      <section class="blog-section">
+        <div class="image-container">
+          <div class="image-box">
+            <img class="Image" src="./images/May 20.png" alt="Image 1" />
+            <div class="text">
+              <p>How to Optimize Your eCommerce Store for Better Conversions</p>
+              <p>READ MORE</p>
+            </div>
+          </div>
+          <div class="image-box">
+            <img class="Image" src="./images/May 13.png" alt="Image 2" />
+            <div class="text">
+              <p>How to Optimize Your eCommerce Store for Better Conversions</p>
+              <p>READ MORE</p>
+            </div>
+          </div>
+          <div class="image-box">
+            <img class="Image" src="./images/May 04.png" alt="Image 3" />
+            <div class="text">
+              <p>Understanding and Implementing SEO for eCommerce Success</p>
+              <p>READ MORE</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---=== BLOG SECTION END ===--->
+    </main>
+    <!--=== END OF MAIN ===-->
 
-    </section>
-  </main><!--=== END OF MAIN ===-->
+    <!--=== FOOTER SECTION START-->
+    <footer></footer>
+    <!--=== END FOOTER-->
 
-  <!--=== FOOTER SECTION START-->
-  <footer>
-
-  </footer><!--=== END FOOTER-->
-
-
-
-
-  <!--=== SCRIPT SECTION-->
-  <script>
-    feather.replace();
-  </script>
-</body>
+    <!--=== SCRIPT SECTION-->
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
