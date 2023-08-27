@@ -1,5 +1,5 @@
 .message-section {
-  margin-top: 50px;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   row-gap: 25px
@@ -32,6 +32,11 @@
   font-family: 'Dosis', sans-serif;
   font-weight: 600;
   border-bottom: 1px solid #000;
+  transition: 0.3s;
+}
+.group-text a:hover {
+  color: #c59400;
+  border-bottom: none;
 }
 .group-text .line {
   width: 22px;
@@ -41,6 +46,7 @@
   left: 75px;
   top: 75px;
 }
+
 
 /*=== BASKET COLLECTION ===*/
 .basket-collection {
@@ -56,8 +62,11 @@
   .message-section {
     flex-direction: row;
     width: 96%;
-    margin: 50px auto 0;
+    margin: 50px auto;
     column-gap: 20px
+  }
+  .group-text .line {
+    left: 80px;
   }
   
 }
@@ -67,13 +76,22 @@
   .message-section {
     flex-direction: row;
     width: 97%;
-    margin: 50px auto 0;
+    margin: 50px auto;
     column-gap: 20px
   }
-  /* .furniture-collection {
+  .group-text {
+    width: 245px;
+    top: 110px;
+    left: 35px;
+  }
+  .group-text .line {
+    left: 90px;
+    top: 52px;
+  }
+  .furniture-collection {
     height: 299px;
-  } */
-  /* .basket-collection {
+  }
+  .basket-collection {
     height: 299px;
-  } */
+  }
 }
