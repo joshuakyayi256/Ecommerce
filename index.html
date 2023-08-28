@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./style/general.css">
   <link rel="stylesheet" href="./style/hero.css">
   <link rel="stylesheet" href="./style/message-section.css">
+  <link rel="stylesheet" href="./style/footer.css">
   <!--END OF CSS LINKS-->
 
   <link rel="icon" href="./images/logo.png">
@@ -104,47 +105,65 @@
 
   <!--=== FOOTER SECTION START-->
   <footer>
-    <div class="footer-logo">
-      <img src="./images/logo.png" alt="tmart logo">
-    </div>
-    <!--=== ADDRESS SECTION ===-->
-    <section class="address-section">
-      <div class="location">
-        <div class="map-pin">
-          <i data-feather="map-pin"></i>
+    <div class="container">
+      <div class="footer-logo">
+        <img src="./images/logo.png" alt="tmart logo" class="tmart-logo">
+      </div>
+      <!--=== ADDRESS SECTION ===-->
+      <section class="address-section">
+        <div class="location">
+          <div class="map-pin">
+            <i data-feather="map-pin"></i>
+          </div>
+          <p>
+            194 Main Rd T, FS Rayed, USA
+          </p>
         </div>
-        <p>
-          194 Main Rd T, FS Rayed, USA
-        </p>
-      </div>
-
-      <div class="message">
-        <div class="mail">
-          <i data-feather="mail"></i>
+  
+        <div class="message">
+          <div class="mail">
+            <i data-feather="mail"></i>
+          </div>
+          <p>
+            info@tmart.org
+          </p>
         </div>
-        <p>
-          info@tmart.org
-        </p>
-      </div>
-
-      <div class="phone">
-        <div class="phone-call">
-          <i data-feather="phone-call"></i>
+  
+        <div class="phone">
+          <div class="phone-call">
+            <i data-feather="phone-call"></i>
+          </div>
+          <p>
+            +233 244 244 244
+          </p>
         </div>
+      </section><!--=== END OF ADDRESS SECTION ===-->
+  
+      <!--=== SUBSCRIBE SECTION ===-->
+      <section class="subscribe-section">
         <p>
-          +233 244 244 244
+          Subscribe to our newsletter and get 10% off your first purchase
         </p>
-      </div>
-    </section><!--=== END OFADDRESS SECTION ===-->
-
-    <section class="subscribe-section">
-      <p>
-        Subscribe to our newsletter and get 10% off your first purchase
-      </p>
-      <div class="newsletter-form">
-        <form action=""></form>
-      </div>
-    </section>
+        <div class="newsletter-form">
+          <form action="process_file.php" method="post" target="_self">
+            <input type="email" id="email" name="email" placeholder="Enter email address" required class="email-input">
+            <button type="submit" class="submit">
+              <i data-feather="chevron-right"></i>
+            </button>
+          </form>
+        </div>
+      </section><!--=== END OF SUBSCRIBE SECTION ===-->
+  
+      <!--=== COPY RIGHT SECTION ===-->
+      <section class="copyright-section">
+        <div class="copyright-text">
+          <div class="copyright-logo">&copy;</div>
+          <p>
+            Tmart - All rights reserved
+          </p>
+        </div>
+      </section><!--=== COPY RIGHT SECTION ===-->
+    </div><!--END OF CONTAINER-->
   </footer><!--=== END FOOTER-->
 
 
