@@ -103,6 +103,7 @@ form button i:hover {
   .footer-logo {
     margin-left: 35px;
   }
+
 }
 
 /*=== DESKTOP VIEW ===*/
@@ -119,5 +120,8 @@ form button i:hover {
   }
   .copyright-section {
     width: 87%;
+  }
+  .subscribe-section p {
+    width: 340px;
   }
 }
