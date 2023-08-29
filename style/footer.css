@@ -92,6 +92,13 @@ form button i:hover {
 }
 /*=== END OF COPY RIGHT SECTION ===*/
 
+/*=== MOBILE VIEW ===*/
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .subscribe-section p {
+    width: 340px;
+  }
+}
+
 /*=== TABLET VIEW ===*/
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .first-sub-container {
@@ -102,6 +109,9 @@ form button i:hover {
   }
   .footer-logo {
     margin-left: 35px;
+  }
+  .subscribe-section p {
+    width: 340px;
   }
 
 }
