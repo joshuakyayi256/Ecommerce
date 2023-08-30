@@ -76,7 +76,7 @@ form button i:hover {
 
 /*=== COPY RIGHT SECTION ===*/
 .copyright-section {
-  width: 93%;
+  width: 90%;
   border-top: 1px solid rgba(0, 0, 0, 0.36);
   margin: 0 auto;
   padding: 0 0 20px;
@@ -96,6 +96,9 @@ form button i:hover {
 @media screen and (min-width: 400px) and (max-width: 600px) {
   .subscribe-section p {
     width: 340px;
+  }
+  form .email-input {
+    width: 90%;
   }
 }
 
@@ -129,7 +132,7 @@ form button i:hover {
     margin-left: 120px;
   }
   .copyright-section {
-    width: 87%;
+    width: 90%;
   }
   .subscribe-section p {
     width: 340px;
