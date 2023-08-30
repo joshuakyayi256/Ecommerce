@@ -3,104 +3,233 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TMART</title>
+  <title>TMART - Serves You Well</title>
   <script src="./logic/feather.js"></script>
   <!--CSS LINKS-->
   <link rel="stylesheet" href="./style/general.css">
+  <link rel="stylesheet" href="./style/hero.css">
+  <link rel="stylesheet" href="./style/message-section.css">
+  <link rel="stylesheet" href="./style/footer.css">
+  <link rel="icon" href="./images/logo.png">
   <link rel="stylesheet" href="BestProducts.css">
-  <link rel="stylesheet" href="./style/header.css">
+  <!--END OF CSS LINKS-->
+
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="site-logo">
-        <img src="./images/site-logo.png" alt="tmart logo">
-      </div>
-  
-      <!--=== NAV LINKS ===-->
-      <nav>
-        <ul>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-  
-      <!--=== GROUP NAV ICONS ===-->
-      <div class="nav-icons">
-        <i data-feather="user"></i>
-        <i data-feather="shopping-cart"></i>
-        <i data-feather="menu"></i>
-      </div>
-      
-    </div><!--== END OF CONTAINER ==-->
-  </header><!--=== END OF HEADER SECTION ===-->
 
   <!--=== MAIN SECTION START ===-->
   <main>
     <!--= HERO SECTION =-->
     <section class="hero-section">
+      <div class="header"><!--== HEADER SECTION ==-->
+        <div class="site-logo">
+          <a href="./index.html">
+            <img src="./images/logo_white.png" alt="tmart logo">
+          </a>
+        </div>
+    
+        <!--=== NAV LINKS ===-->
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    
+        <!--=== GROUP NAV ICONS ===-->
+        <div class="nav-icons">
+          <a href="#">
+            <i data-feather="user"></i>
+          </a>
+          <a href="#">
+            <i data-feather="shopping-cart"></i>
+          </a>
+          <a href="#">
+            <i data-feather="menu" onclick="showMenu()"></i>
+          </a>
+        </div>
 
-    </section>
-<!-- The Best Product Section -->
+      </div><!--== END OF HEADER SECTION ==-->
 
-<div class="BestProducts">
+      <!--== HAMUGER MENU ==-->
+      <nav id="nav-hamb-menu">
+        <ul>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="close-ham-menu">
+          <i data-feather="x" onclick="hideMenu()"></i>
+        </div>
+      </nav>
 
-  <h2>Best Products</h2>
-<!-- The items of the section -->
+      <!--=== HEADLINE SECTION ===-->
+      <div class="headline">
+        <div>
+          <h1>
+            New Product Collection 
+          </h1>
+          <a href="#">SHOP NOW</a>
+        </div>
+      </div>
 
-<div class="image-container">
-  <figure><img src="images/MicrosoftTeams-image (1).png" alt="ChristopherKnightFurniture"></figure>
-  <div class="overlay-text">
-    <figcaption>Christopher Knight Furniture <br> $ 235.23</figcaption>
-  </div>
-  </div>
+      <!--== OVERLAY ==-->
+      <div class="overlay"></div>
 
-<div class="image-container">
-    <figure><img src="images/MicrosoftTeams-image (4).png" alt="WheatStrawUnbreakableCup"></figure>
-    <div class="overlay-text"><figcaption>Wheat Straw Unbreakable Cup <br> $ 67.15</figcaption></div>
-</div>
+    </section><!--=== END OF HERO SECTION ===-->
 
-<div class="image-container">
-    <figure><img src="images/MicrosoftTeams-image (5).png" alt="AdidasClassicBag"></figure>
-    <div class="overlay-text"><figcaption>Adidas Classic Bag <br> $ 49.82</figcaption></div>
-</div>
+    <!--===START OF MESSAGE SECTION ===-->
+    <section class="message-section">
+      <div class="furniture-collection">
+        <div class="group-text">
+          <p>New Furniture Collection</p>
+          <a href="#">SHOP NOW</a>
+          <div class="line"></div>
+        </div>
+      </div><!--== END OF FURNITURE-COLL ===-->
 
-<div class="image-container">
-    <figure><img src="images/MicrosoftTeams-image (6).png" alt="DeskPencil"></figure>
-    <div class="overlay-text"><figcaption>Desk Pencil <br> $ 22.83</figcaption></div>
-</div>
+      <div class="basket-collection">
+        <div class="group-text">
+          <p>New Furniture Collection</p>
+          <a href="#">SHOP NOW</a>
+          <div class="line"></div>
+        </div>
+      </div>
+    </section><!--===END OF MESSAGE SECTION ===-->
 
-<div class="image-container">
-    <figure><img src="images/MicrosoftTeams-image (7).png" alt="RippleCreakKey"></figure>
-    <div class="overlay-text"><figcaption>Ripple Creak Key <br> $ 8.13</figcaption></div>
-</div>
 
-<div class="image-container">
-    <figure><img src="images/MicrosoftTeams-image (8).png" alt="EconomicalCotton Canva"></figure>
-    <div class="overlay-text"><figcaption>Economical Cotton Canva <br> $ 11.08</figcaption></div>
-</div>
 
-<div class="image-container">
-    <figure><img src="images/MicrosoftTeams-image (9).png" alt="MichealKorsOriginal"></figure>
-    <div class="overlay-text"><figcaption>Micheal Kors Original <br> $ 15.10</figcaption></div>
-</div>
 
-<div class="image-container">
-    <figure><img src="images/MicrosoftTeams-image (10).png" alt="BostantenWomenLeather"></figure>
-    <div class="overlay-text"><figcaption>Bostanten Women Leather <br> $ 234.26</figcaption></div>
-</div>
+    
+    <!-- The Best Product Section -->
 
-</div>
+    <div class="BestProducts">
+
+      <h2>Best Products</h2>
+    <!-- The items of the section -->
+
+    <div class="image-container">
+      <figure><img src="images/MicrosoftTeams-image (1).png" alt="ChristopherKnightFurniture"></figure>
+      <div class="overlay-text">
+        <figcaption>Christopher Knight Furniture <br> $ 235.23</figcaption>
+      </div>
+      </div>
+
+    <div class="image-container">
+        <figure><img src="images/MicrosoftTeams-image (4).png" alt="WheatStrawUnbreakableCup"></figure>
+        <div class="overlay-text"><figcaption>Wheat Straw Unbreakable Cup <br> $ 67.15</figcaption></div>
+    </div>
+
+    <div class="image-container">
+        <figure><img src="images/MicrosoftTeams-image (5).png" alt="AdidasClassicBag"></figure>
+        <div class="overlay-text"><figcaption>Adidas Classic Bag <br> $ 49.82</figcaption></div>
+    </div>
+
+    <div class="image-container">
+        <figure><img src="images/MicrosoftTeams-image (6).png" alt="DeskPencil"></figure>
+        <div class="overlay-text"><figcaption>Desk Pencil <br> $ 22.83</figcaption></div>
+    </div>
+
+    <div class="image-container">
+        <figure><img src="images/MicrosoftTeams-image (7).png" alt="RippleCreakKey"></figure>
+        <div class="overlay-text"><figcaption>Ripple Creak Key <br> $ 8.13</figcaption></div>
+    </div>
+
+    <div class="image-container">
+        <figure><img src="images/MicrosoftTeams-image (8).png" alt="EconomicalCotton Canva"></figure>
+        <div class="overlay-text"><figcaption>Economical Cotton Canva <br> $ 11.08</figcaption></div>
+    </div>
+
+    <div class="image-container">
+        <figure><img src="images/MicrosoftTeams-image (9).png" alt="MichealKorsOriginal"></figure>
+        <div class="overlay-text"><figcaption>Micheal Kors Original <br> $ 15.10</figcaption></div>
+    </div>
+
+    <div class="image-container">
+        <figure><img src="images/MicrosoftTeams-image (10).png" alt="BostantenWomenLeather"></figure>
+        <div class="overlay-text"><figcaption>Bostanten Women Leather <br> $ 234.26</figcaption></div>
+    </div>
+
+    </div>
+
 
   </main><!--=== END OF MAIN ===-->
 
   <!--=== FOOTER SECTION START-->
-  <footer>
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="./images/logo.png" alt="tmart logo" class="tmart-logo">
+      </div>
 
-  </footer>
-  <!--=== END FOOTER-->
+      <div class="first-sub-container"><!--=== 1ST CONATINER START ===-->
+        <div class="sub-container-left"><!--=== START OF SUBCONATINER LEFT ===-->
+          
+          <!--=== ADDRESS SECTION ===-->
+          <section class="address-section">
+            <div class="location">
+              <div class="map-pin">
+                <i data-feather="map-pin"></i>
+              </div>
+              <p>
+                194 Main Rd T, FS Rayed, USA
+              </p>
+            </div>
+      
+            <div class="message">
+              <div class="mail">
+                <i data-feather="mail"></i>
+              </div>
+              <p>
+                info@tmart.org
+              </p>
+            </div>
+      
+            <div class="phone">
+              <div class="phone-call">
+                <i data-feather="phone-call"></i>
+              </div>
+              <p>
+                +233 244 244 244
+              </p>
+            </div>
+          </section><!--=== END OF ADDRESS SECTION ===-->
+  
+        </div><!--=== END OF SUB CONTAINER LEFT ===-->
+    
+        <div class="sub-container-right"><!--=== START OF SUBCONTAINER RIGHT ===-->
+          <!--=== SUBSCRIBE SECTION ===-->
+          <section class="subscribe-section">
+            <p>
+              Subscribe to our newsletter and get 10% off your first purchase
+            </p>
+            <div class="newsletter-form">
+              <form action="process_file.php" method="post" target="_self">
+                <input type="email" id="email" name="email" placeholder="Enter email address" required class="email-input">
+                <button type="submit" class="submit">
+                  <i data-feather="chevron-right"></i>
+                </button>
+              </form>
+            </div>
+          </section><!--=== END OF SUBSCRIBE SECTION ===-->
+        </div><!--=== END OF SUBCONTAINER RIGHT ===-->
+
+      </div><!--=== END OF 1ST SUB CONTAINER ===-->
+  
+      <!--=== COPY RIGHT SECTION ===-->
+      <section class="copyright-section">
+        <div class="copyright-text">
+          <div class="copyright-logo">&copy;</div>
+          <p>
+            Tmart - All rights reserved
+          </p>
+        </div>
+      </section><!--=== COPY RIGHT SECTION ===-->
+    </div><!--END OF CONTAINER-->
+  </footer><!--=== END FOOTER-->
 
 
 
@@ -108,6 +237,17 @@
   <!--=== SCRIPT SECTION-->
   <script>
     feather.replace();
+
+    //SHOW HAMBURGER MENU
+    function showMenu() {
+      document.getElementById('nav-hamb-menu').style.display = 'flex';
+      document.getElementById('nav-hamb-menu').classList.add('slide-from-right')
+    }
+
+    //HIDE HAMBURGER MENU
+    function hideMenu() {
+      document.getElementById('nav-hamb-menu').style.display = 'none';
+    }
   </script>
 </body>
 </html>
