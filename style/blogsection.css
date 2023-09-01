@@ -1,0 +1,114 @@
+/*style sheet*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&display=swap');
+.blog-section h2{
+    text-align: center;
+    }
+.blog-section .container{
+    margin: 0 auto; 
+    height: 400px;
+    width: 95%;
+    }
+.container .recent {
+    background-image: url(../images/b1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container .recent2 {
+    background-image: url(../images/b2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container .recent3 {
+    background-image: url(../images/b3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container .recent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+.container .recent2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+.container .recent3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+.recent .recent-date {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    background-color: #fff;
+    width: 50px;
+    margin: 20px;
+    text-align: center;
+}
+.recent2 .recent-date {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    background-color: #fff;
+    width: 50px;
+    margin: 20px;
+    text-align: center;
+}
+.recent3 .recent-date {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    background-color: #fff;
+    width: 50px;
+    margin: 20px;
+    text-align: center;
+}
+.recent-date .increase {
+    font-size: 25px;
+}
+.recent-date2 .increase {
+    font-size: 25px;
+}
+.recent-date3 .increase {
+    font-size: 25px;
+}
+.recent-text a{
+    font-family: 'Dosis';
+}
+.recent-text a::after {
+    content: "";
+    border: 1px solid #000;
+    display: inline-block;
+    width: 40px;
+    vertical-align: middle;
+    margin: 10px;
+}
+@media (max-width:599px){
+    .blog-section .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
+@media (max-width:899px) and (min-width:600px) {
+    .blog-section .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+}
+@media (min-width:900px){
+    .blog-section .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
