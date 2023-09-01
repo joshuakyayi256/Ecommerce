@@ -127,7 +127,7 @@
     .blog-section .container-blog {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
+        gap: 20px;
     }
 }
 
@@ -136,7 +136,7 @@
     .blog-section .container-blog {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
+        gap: 35px;
     }
 }
 
@@ -145,6 +145,6 @@
     .blog-section .container-blog {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 35px;
     }
 }
