@@ -3,11 +3,12 @@
 
 
 .blog-section {
-    margin: 0 0 40px 0;
+    margin: 90px 0 40px 0;
 }
 
 .blog-section h2{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .blog-section .container-blog{
