@@ -1,5 +1,6 @@
 /*style sheet*/
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap')
 
 
 .blog-section {
@@ -26,7 +27,6 @@
     background-image: url(../images/b1.png);
 }
 
-
 .container-blog .recent2 {
     background-image: url(../images/b2.png);
 }
@@ -40,26 +40,34 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 30px;
+    border: #000;
 }
 
 
-
-.article .recent-date {
+.article .recent-date .recent-text .recent-text a {
     display: flex;
     flex-direction: column;
-    line-height: 1.5;
-    background-color: #fff;
-    width: 50px;
-    margin: 20px;
-    text-align: center;
+    line-height: 1.5;    
 }
 
+.article .recent-date{
+    width: 67px;
+    height: 67px;
+    top: 1988px;
+    left: 46px;
+    text-align: center;
+    background-color: #fff;
+    border-style: double;
+    border:1px solid #0000000A;
+   }
+
+.recent-date{
+    font-family: 'Inter';
+   }
 
 .container-blog .increase {
     font-size: 25px;
 }
-
-
 
 .recent-text {
     font-family: 'Poppins', sans-serif;
