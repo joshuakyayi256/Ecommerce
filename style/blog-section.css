@@ -10,6 +10,9 @@
 .blog-section h2{
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
 }
 
 .blog-section .container-blog{
