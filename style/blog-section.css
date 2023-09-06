@@ -22,6 +22,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 .container-blog .recent {
     background-image: url(../images/b1.png);
@@ -57,9 +58,16 @@
     left: 46px;
     text-align: center;
     background-color: #fff;
-    border-style: double;
-    border:1px solid #0000000A;
-   }
+    /* border-style: double; */
+    border: 1px solid rgba(0, 0, 0, 0.04); /*Creates a border around the calendar*/
+}
+
+/*Gives the effect of inside padding*/
+.article .recent-date-border {
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.83);
+    position: absolute;
+}
 
 .recent-date{
     font-family: 'Inter';
@@ -72,25 +80,40 @@
 .recent-text {
     font-family: 'Poppins', sans-serif;
     transition: 0.3s;
+    position: absolute;
+    bottom: 60px;
 }
 .recent-text a {
-    font-family: 'Dosis';
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    position: inherit;
+    bottom: -30px;
+    border-bottom: 1px solid #000;
 }
-.read-more-link {
-    margin-top: 10px;
-}
-.recent-text a:hover {
-    color: #c59400;
+.recent-text span {
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    border-top: 2px solid #000;/* Adjust the size to control the thickness of the line */
+    position: inherit; /* Ancestor is on position absolute*/
+    bottom: -20px;
+    left: 85px;
+
 }
 
-.recent-text a::after {
+.recent-text a:hover {
+    color: #c59400;
+    border: none;
+}
+
+/* .recent-text a::after {
     content: "";
     border: 1px solid #000;
     display: inline-block;
     width: 40px;
     vertical-align: middle;
     margin: 10px;
-}
+} */
 
 /*=== MOBILE VIEW ===*/
 @media (max-width:599px){
