@@ -5,26 +5,26 @@
   padding-top: 20px;
 }
 
-.BestProducts {
+/* .BestProducts {
   text-align: center;
   align-items: center;
   background-color: white;
   box-sizing: border-box;
   flex-shrink: 0;
-}
-.image-container {
+} */
+/* .image-container {
     position: relative;
     display: inline-block;
-    margin: 10px; /* Add spacing between images if desired */
-  }
+    margin: 10px; Add spacing between images if desired
+  } */
   
-  .image-container img {
+  /* .image-container img {
     display: block;
     max-width:fit-content;
     height: fit-content;
-  }
+  } */
   
-  .overlay-text {
+  /* .overlay-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,36 +40,36 @@
     justify-content: center;
     font-size: 16px;
     line-height: 1.5;
-  }
+  } */
   
 /* If you want the overlay to be visible at all times */
-.image-container .overlay-text {
+/* .image-container .overlay-text {
   opacity: 1;
-}
+} */
 
 /*=== MOBILE VIEW ===*/
-@media (max-width:599px){
+/* @media (max-width:599px){
   .BestProducts {
-      display:-ms-flexbox;
+      display: grid;
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
   }
-}
+} */
 
 /*=== TABLET VIEW ===*/
-@media (max-width:899px) and (min-width:600px) {
+/* @media (max-width:899px) and (min-width:600px) {
   .BestProducts {
-      display:-ms-flexbox;
+      display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
   }
-}
+} */
 
 /*=== DESKTOP VIEW ===*/
-@media (min-width:900px){
+/* @media (min-width:900px){
   .BestProducts {
-    display:-ms-flexbox;
+    display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;  
   }
-}
+} */
