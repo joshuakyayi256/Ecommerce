@@ -7,10 +7,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 15px;
 }
 .product-section h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 30px;
@@ -42,8 +43,8 @@
 .image-container .michael-kors {
   background: url(../images/michael-kors.png) scroll no-repeat center / cover;
 }
-.image-container .cotton-canvas {
-  background: url(../images/cotton-canvas.png) scroll no-repeat center / cover;
+.image-container .women-bag {
+  background: url(../images/women-bag.png) scroll no-repeat center / cover;
 }
 /* .overlay-text p {
   padding-top: 20px;
