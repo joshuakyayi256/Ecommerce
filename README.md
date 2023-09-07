@@ -42,8 +42,3 @@ For our final project, we will have the opportunity to practice our web design s
 - Clean and organized HTML/CSS code.
 - Implementation of additional tasks (hover effect, optimization).
 
-## Due Date:
-
-Submit your completed project by 1st September, 2023.
-
-- We value your feedback! Feel free to leave comments or suggestions to help us improve our skills as Developers.
